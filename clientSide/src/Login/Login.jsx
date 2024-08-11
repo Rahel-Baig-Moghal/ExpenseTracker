@@ -13,7 +13,7 @@ const Login = () => {
   const Submit = (event) => {
     event.preventDefault();
     axios
-      .post("http://localhost:3001/users/login", { username, password })
+      .post("http://localhost:3001/user/login", { username, password })
       .then((result) => {
         if (result.data.status === 200) {
           navigate("/Home");

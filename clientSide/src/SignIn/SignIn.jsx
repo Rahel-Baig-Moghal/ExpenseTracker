@@ -13,7 +13,7 @@ const SignIn = () => {
     event.preventDefault();
 
     axios
-      .post("http://localhost:3001/createuser", { username, email, password })
+      .post("http://localhost:3001/user/signin", { username, email, password })
       .then((result) => {
         if (result.data.status === 200) {
           alert("Profile created successfully");
