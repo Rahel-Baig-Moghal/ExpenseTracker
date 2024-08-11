@@ -1,0 +1,96 @@
+/* Navbar CSS */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5c715e;
+    color: #f2f9f1;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.brand {
+    margin: 0;
+    font-size: 24px;
+}
+
+.nav-items {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-items a {
+    color: #f2f9f1;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.nav-items a:hover {
+    background-color: #b6cdbd;
+    border-radius: 5px;
+}
+
+.profile {
+    position: relative;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.dropdown {
+    position: absolute;
+    top: 54px;
+    right: 0;
+    background-color: #5c715e;
+    border: 1px solid #5c715e;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    min-width: 150px;
+    z-index: 1000;
+    display: none; /* Initially hidden */
+}
+
+/* Show dropdown when it's active */
+.dropdown.active {
+    display: block;
+}
+
+.dropdown a {
+    display: block;
+    color: #f2f9f1;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.dropdown a:hover {
+    background-color: #b6cdbd;
+}
+
+/* Container CSS */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 1rem;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.message-box h1 {
+    font-size: 2rem;
+    margin: 0;
+}
