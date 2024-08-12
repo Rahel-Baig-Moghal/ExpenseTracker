@@ -29,7 +29,7 @@ const SignIn = () => {
   return (
     <div className="form-container">
       <form className="form" onSubmit={Submit} id="form" name="form">
-        <p className="form-title">Create an account</p>
+        <p className="form-title">Register</p>
         <div className="input-container">
           <input
             type="text"
@@ -59,7 +59,7 @@ const SignIn = () => {
           />
         </div>
         <button type="submit" className="submit">
-          Sign in
+          Register
         </button>
 
         <p className="signup-link">

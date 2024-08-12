@@ -4,8 +4,8 @@ import SignIn from "./SignIn/SignIn";
 import Login from "./Login/Login";
 import Home from "./Home/Home";
 import AccessDenied from "./AccessDenied/AccessDenied";
-import Dashboard from "./Dashboard/Dashboard";
-import ExpenseTracker from "./ExpenseTracker/ExpenseTracker";
+import Test from "./Test/Test";
+import Landing from "./Landing/Landing";
 
 function App() {
 
@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={<Login  />}
+            element={<Landing  />}
           ></Route>
           <Route path="/Signin" element={<SignIn />}></Route>
           <Route
@@ -27,14 +27,10 @@ function App() {
             path="/Home"
             element={<Home />}
           ></Route>
-          {/* <Route
-            path="/DashBoard"
-            element={<Dashboard />}
-          ></Route>
           <Route
-            path="/ExpenseTracker"
-            element={<ExpenseTracker />}
-          ></Route> */}
+            path="/Test"
+            element={<Test />}
+          ></Route>
           <Route path="/Accessdenied" element={<AccessDenied />}></Route>
         </Routes>
       </BrowserRouter>

@@ -1,0 +1,109 @@
+/* TrackerForm.css */
+
+.tracker-card {
+    background-color: #ddeedf;
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tracker-title {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.tracker-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tracker-group {
+    position: relative;
+}
+
+.tracker-form .tracker-group label {
+    font-size: 14px;
+    color: rgb(99, 102, 102);
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: #ddeedf;
+    transition: all .3s ease;
+}
+
+.tracker-form .tracker-group input,
+.tracker-form .tracker-group textarea,
+.tracker-form .tracker-group select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    outline: 0;
+    width: 100%;
+    background-color: transparent;
+}
+
+.tracker-form .tracker-group input:placeholder-shown+label,
+.tracker-form .tracker-group textarea:placeholder-shown+label,
+.tracker-form .tracker-group select:placeholder-shown+label {
+    top: 10px;
+    background-color: transparent;
+}
+
+.tracker-form .tracker-group input:focus,
+.tracker-form .tracker-group textarea:focus,
+.tracker-form .tracker-group select:focus {
+    border-color: #5c715e;
+}
+
+.tracker-form .tracker-group input:focus+label,
+.tracker-form .tracker-group textarea:focus+label,
+.tracker-form .tracker-group select:focus+label {
+    top: -10px;
+    left: 10px;
+    background-color: #ddeedf;
+    color: #5c715e;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.tracker-form .tracker-group textarea {
+    resize: none;
+    height: 100px;
+}
+
+.tracker-form button {
+    background-color: #5c715e;
+    color: #f2f9f1;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tracker-form button:hover {
+    background-color: #b6cdbd;
+}
+
+/* Color classes */
+.tracker-first-color { 
+    background: #f2f9f1; 
+}
+	
+.tracker-second-color { 
+    background: #ddeedf; 
+}
+
+.tracker-third-color { 
+    background: #b6cdbd; 
+}
+
+.tracker-fourth-color { 
+    background: #5c715e; 
+}

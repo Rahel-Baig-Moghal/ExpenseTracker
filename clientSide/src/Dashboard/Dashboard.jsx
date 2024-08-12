@@ -19,15 +19,13 @@ const Dashboard = ({userData, setUserData}) => {
   }, []);
   
   return (
-    <div>
-      <div className="container">
+      <div className="display-contents">
         {userData ? (
           <h1>Welcome home {userData.username}</h1>
         ) : (
           <h1>{error || "Loading..."}</h1>
         )}
       </div>
-    </div>
   );
 };
 

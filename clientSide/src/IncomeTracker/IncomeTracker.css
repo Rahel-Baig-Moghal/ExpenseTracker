@@ -1,4 +1,4 @@
-.display-contents {
+.IncomeTracker-contents {
     height: 100%;
     width: calc(100% - 5rem); /* Subtract the sidebar width from the full width */
     display: flex;
