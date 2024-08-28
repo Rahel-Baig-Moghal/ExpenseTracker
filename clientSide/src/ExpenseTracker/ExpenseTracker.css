@@ -8,3 +8,15 @@
     overflow: auto; /* Allow scrolling if content overflows */
 }
 
+.ExpenseTracker-contents {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .chart-container {
+    margin-top: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  

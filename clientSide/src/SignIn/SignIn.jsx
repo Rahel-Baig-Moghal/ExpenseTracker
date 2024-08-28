@@ -55,7 +55,7 @@ const SignIn = () => {
             type="password"
             placeholder="Enter password"
             id="password"
-            onChange={(event) => setPassword(event.target.value)}
+            onChange={(event) => setEmail(event.target.value)}
           />
         </div>
         <button type="submit" className="submit">
